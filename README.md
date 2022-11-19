@@ -1,15 +1,26 @@
 # Pi-PrintScheduler
 
-#### Create print file
+## Stop clogged inkjet printer issues
+### Inkjet printers need to print often to keep from getting clogged up and wasting ink using the cleaning cycles.
+### This will also save on the wasted ink going into the waste absorbing sponge.
+
+
+
+### Install Cups
+### Setup printer in the https://[CUPS ip address]:631 web interface
+Username and password is the linux user and password
+
+
+#### Create print file in ~/
    `touch print.sh`
-#### make it executable
+#### Make it executable
    `chmod 777 print.sh`
 #### Edit print file
    `nano print.sh`
 #### Test file
    `lp /usr/share/cups/data/default-testpage.pdf`
 
-#### set default primter
+#### Set default primter
    `lpoptions -d [printername]`
 
 #### Setup schedule
@@ -18,7 +29,7 @@
 #### Test with every Minute
    `*/1 * * * * /root/print.sh`
 
-#### examples
+#### Examples
    `https://crontab.guru/#30_8_*_*_6`
 
 #### Every Mon - Wed - Friday @ 8:30 AM
