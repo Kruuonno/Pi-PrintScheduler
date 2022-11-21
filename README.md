@@ -26,11 +26,11 @@ Username and password is the linux user and password
 #### Setup schedule
    `crontab -e`
 
-#### Test with every Minute
-   `*/1 * * * * /root/print.sh`
-
 #### Examples
    `https://crontab.guru/#30_8_*_*_6`
+
+#### Test with every Minute
+   `*/1 * * * * /root/print.sh`
 
 #### Every Mon - Wed - Friday @ 8:30 AM
    `30 8 * * 1,3,5 /root/print.sh`
