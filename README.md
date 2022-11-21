@@ -33,4 +33,4 @@ Username and password is the linux user and password
    `https://crontab.guru/#30_8_*_*_6`
 
 #### Every Mon - Wed - Friday @ 8:30 AM
-   `30 8 * * 1,3,5`
+   `30 8 * * 1,3,5 /root/print.sh`
